@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/style/BS/bootstrap.css">
+  <link rel="stylesheet" href="/assets/style/index.css">
+</head>
+
+<body>
+  <header class="header d-flex flex-row justify-content-between align-items-center">
+    <div class="logo">
+      <a href="/">
+        <img src="/assets/images/hex-teachable-logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="hamIcon d-none">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav class="nav">
+      <ul class="mainMenu d-flex flex-row m-0">
+        <li class="px-3"><a href="#">第一週</a></li>
+        <li class="px-3"><a href="#">第二週</a></li>
+        <li class="px-3"><a href="#">第三週</a></li>
+        <li class="px-3"><a href="#">第四週</a></li>
+        <li class="px-3"><a href="#">第五週</a></li>
+        <li class="px-3"><a href="#">第六週</a></li>
+        <li class="px-3"><a href="#">第七週</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="d-flex flex-row">
+    <aside class="asideMenu d-flex flex-column">
+      <img class="img-fluid" src="/assets/images/web-live-course-800x600.png" alt="六角2020春季網頁切版">
+      <nav class="nav">
+        <ul class="menu d-flex flex-column m-0">
+          <li class="px-3"><a href="/Week1/index.html"><i class="fas fa-circle mr-2"></i>第一週</a></li>
+          <li class="px-3"><a href="/Week2/index.html"><i class="fas fa-circle mr-2"></i>第二週</a></li>
+          <li class="px-3"><a href="/Week3/index.html"><i class="fas fa-circle mr-2"></i>第三週</a></li>
+          <li class="px-3"><a href="#"><i class="far fa-circle mr-2"></i>第四週</a></li>
+          <li class="px-3"><a href="#"><i class="far fa-circle mr-2"></i>第五週</a></li>
+          <li class="px-3"><a href="#"><i class="far fa-circle mr-2"></i>第六週</a></li>
+          <li class="px-3"><a href="#"><i class="far fa-circle mr-2"></i>第七週</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <%- contents %>
+    </main>
+  </div>  
+
+  <footer class="footer">
+    <div class="container text-center py-1">
+      © 2020. All Rights Reserved.
+    </div>
+  </footer>
+
+
+  <script src="/assets/js/vendors.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.3rem;
+}
+
+.nav-header{
+  border-bottom: 1px solid #e5e5e5;
+  .logo{
+    font-size: 2.5rem;
+  }
+}
+.nav-menu{
+  ul{
+    list-style-type: none;
+  }
+  a{
+    color: #6c757d;
+  }
+}
+
+.banner{
+  .container{
+    background: url("https://images.unsplash.com/photo-1496361751588-bdd9a3fcdd6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80") no-repeat center;
+    background-size: cover;
+  }
+  .banner-body{
+    padding: 3rem 2rem;
+    width: 50%;
+  }
+  .banner-title{
+    font-size: 2rem;
+
+  }
+}
+.card{
+  .card-img-right{
+    width: 30%;
+  }
+  .card-title{
+    font-size: 1.5rem;
+  }
+}
+

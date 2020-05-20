@@ -1,0 +1,66 @@
+@import "_variables_Custom.scss";
+
+.icon-optical{
+  background-image: url("/assets/images/week3/icon-diamond.svg");
+}
+.icon-sunglasses{
+  background-image: url("/assets/images/week3/icon-glasses.svg");
+}
+.icon-functional{
+  background-image: url("/assets/images/week3/icon-thunder.svg");
+}
+// 刊頭
+.banner{
+  background: url("/assets/images/week3/banner.png") center no-repeat;
+  background-size: cover;
+  color: $main-color;
+  height: 100vh;
+  .subTitle{
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  .title{
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+// 用專業的心，做專業的事
+.serviceItems{
+  padding: 4rem 0;
+}
+
+// 經典系列鏡框
+.classic{}
+
+.cross-bg{
+  background-image: url("/assets/images/week3/bg.png");
+}
+
+//聯名設計鏡框
+.joint{
+  .moreBox{
+    height: 100%;
+    background-image: url("/assets/images/week3/more.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 70% 0;
+  }
+  .moreLink{
+    display: inline-block;
+    background-color: $white;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-decoration: none;
+    &:hover{
+      color: $light-main-color;
+      text-shadow: ;
+    }
+  }
+}
+
+//顧客推薦
+.recommend{}
+
+//聯絡我們
+.contact{}

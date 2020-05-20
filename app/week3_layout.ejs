@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/style/Week3/bootstrap.css">
+  <link rel="stylesheet" href="/assets/style/Week3/common.css">
+</head>
+
+<body>
+  <header class="header d-flex justify-content-between align-items-center">
+    <div class="hamIcon d-none">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="logo">
+      <a href="/">
+        <img src="/assets/images/week3/logo.png" alt="logo">
+      </a>
+    </div>
+    <nav class="nav">
+      <ul class="menu d-flex flex-row m-0">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerHeader">
+        <ul class="siteMap">
+          <li>
+            <a href="">首頁</a>
+          </li>
+          <li>
+            <a href="">系列鏡框</a>
+          </li>
+          <li>
+              <a href="">門市據點</a>
+          </li>
+          <li>
+            <a href="">部落格</a>
+          </li>
+          <li>
+            <a href="">常見問題</a>
+          </li>
+        </ul>
+        <ul class="socialLink">
+          <li>
+            <a class="iconLink" href="#"><img src="/assets/images/week3/icon-fb.svg" alt=""></a>
+          </li>
+          <li>
+            <a class="iconLink" href="#"><img src="/assets/images/week3/icon-ig.svg" alt=""></a>
+          </li>
+          <li>
+            <a class="iconLink" href="#"><img src="/assets/images/week3/icon-line.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerBody">
+        <p>
+          <img class="icon" src="/assets/images/week3/icon-phone.svg" alt="">
+          0800-000-00
+        </p>
+        <p>
+          <img class="icon" src="/assets/images/week3/icon-mail.svg" alt="">
+          glasses@business.com
+        </p>
+      </div>
+      <div class="footerFooter">
+        <img src="/assets/images/week3/logo.png" alt="" class="logo">
+        <snap class="copyRight">Copyright © 2020 Glasses.All rights reserved.</snap>
+        <a href="#">隱私權政策</a>
+        <a href="#">服務條款</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

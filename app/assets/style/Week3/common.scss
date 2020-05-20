@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&family=Roboto:wght@500;900&display=swap');
+@import "_variables_Custom.scss";
+@import "_grid.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+body{
+  font-family: 'Roboto','Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.bg-main-color{
+  background-color: $main-color;
+}
+
+.bg-second-color{
+  background-color: $second-color;
+}
+
+.text-main-color{
+  color:  $main-color;
+}
+.text-light-main-color{
+  color: $light-main-color;
+}
+
+.w-10{ width: 10%;}
+.w-20{ width: 10%;}
+.w-30{ width: 30%;}
+.w-40{ width: 40%;}
+.w-50{ width: 50%;}
+.w-60{ width: 60%;}
+.w-70{ width: 70%;}
+.w-80{ width: 80%;}
+.w-90{ width: 90%;}
