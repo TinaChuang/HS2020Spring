@@ -1,4 +1,5 @@
 @import "_variables_Custom.scss";
+@import "_grid.scss";
 
 .icon-optical{
   background-image: url("/assets/images/week3/icon-diamond.svg");
@@ -44,18 +45,60 @@
     background-image: url("/assets/images/week3/more.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
-    background-position: 70% 0;
+    background-position: 80% 0;
+    @include pad{
+      background-position: 30% 0;
+    }
+    @include mobile{
+      background-position: 0 0;
+    }
   }
   .moreLink{
+    position: relative;
     display: inline-block;
     background-color: $white;
     font-size: 4rem;
-    line-height: 4.5rem;
+    padding: .8rem 1rem;
     text-decoration: none;
+    transition: text-shadow .5s;
     &:hover{
       color: $light-main-color;
-      text-shadow: ;
+      text-shadow: rgba(170, 6, 1, .8) 0 -4rem 0, rgba(170, 6, 1, .4) 0 -8rem 0;
+      .icon-arrow{
+        transform: translateX(1rem);
+      }
     }
+    @include pad{
+      font-size: 1rem;
+    }
+    @include mobile{
+      font-size: .8rem;
+    }
+    .icon-arrow{
+      display: inline-block;
+      height: 4rem;
+      width: auto;
+      transition: all .3s;
+      @include pad{
+        height: 1rem;
+      }
+      @include mobile{
+        height: .8rem;
+      }
+    }
+      
+  }
+  .coverText{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgba(225, 225, 225, .6);
+    width: calc(100% - 30px);
+    height: 100%;
+    top: 0;
+    left: 15px;
+    color: $light-main-color;
+    font-size: 4rem;
   }
 }
 

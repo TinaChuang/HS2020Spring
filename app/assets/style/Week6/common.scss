@@ -1,0 +1,13 @@
+@import "variables_Custom.scss";
+@import "grid.scss";
+@import "header.scss";
+@import "footer.scss";
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.material-icons{
+  font-family: 'Material Icons';
+}

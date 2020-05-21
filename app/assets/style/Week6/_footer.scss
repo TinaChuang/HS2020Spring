@@ -1,0 +1,12 @@
+.footer {
+  background-color: #121212;
+  padding: 2rem 0;
+  .logo{
+    font-family: 'Raleway';
+  }
+  .copyRight{
+    color: $white;
+    opacity: .6;
+  }
+  a{ color: $white;}
+}

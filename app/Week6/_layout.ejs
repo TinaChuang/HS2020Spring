@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style/Week6/bootstrap.css">
+  <link rel="stylesheet" href="/assets/style/Week6/common.css">
+  
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="hamIcon d-lg-none text-white">
+          <span class="material-icons">menu</span>
+        </div>
+        <div class="logo">
+          <a href="/">CRAFTsMAN</a>
+        </div>
+        <nav class="nav">
+          <ul class="menu d-flex flex-row m-0">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#"><span class="material-icons">shopping_cart</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="container d-flex flex-row justify-content-between align-content-center">
+      <div>
+        <a class="logo pr-3" href="#">CRAFTsMAN</a>
+        <span class="copyRight">© 2020. All Rights Reserved.</span>
+      </div>
+      <div>
+        <u class="d-flex flex-row m-0">
+          <li class="py-2"><a href="#">Purchase Policy</a></li>
+          <li class="py-2"><a href="#">Privacy Policy</a></li>
+          <li class="py-2"><a href="#">Terms & Conditions</a></li>
+        </u>
+      </div>      
+    </div>
+  </footer>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
