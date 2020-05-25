@@ -1,3 +1,5 @@
+@import "variables_Custom.scss";
+
 .banner{
   position: relative;
   min-height: 100vh;
@@ -18,4 +20,17 @@
   }
 }
 .material{}
-.artDirector{}
+.artDirector{
+  background-image: url("https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+}
+
+.connect{
+  background-image: url("https://images.unsplash.com/photo-1572003414077-38770ebec0a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
