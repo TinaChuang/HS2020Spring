@@ -1,9 +1,11 @@
 (function($){
 	$('.owl-carousel').owlCarousel({
-		center: true,
+		// center: true,
 		loop: true,
 		margin: 10,
 		responsiveClass: true,
+		autoplay: true,
+    autoplayTimeout: 3000,
 		responsive:{
 			0:{
 				items:2,
@@ -15,9 +17,16 @@
 			},
 			1000:{
 				items: 4,
-        nav:true,
-        loop:false
+        nav:false,
+        loop:true
       }
       }
 	});
+	$("#openMenu").on("click", ()=>{
+		$("#mobileMenu").show();
+	});
+	$("#closeMenu").on("click", ()=>{
+		$("#mobileMenu").hide();
+	});
+
 })($);

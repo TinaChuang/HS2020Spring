@@ -1,4 +1,5 @@
 @import "variables_Custom.scss";
+@import "../grid.scss";
 
 .banner{
   position: relative;
@@ -17,20 +18,90 @@
     right: 0;
     background: url("https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center bottom;
     background-size: cover;
+    z-index: -1;
+    @include pad{
+      width: 100%;
+    }
+  }
+  .row {
+    min-height: 100vh;
+  }
+  @include pad{
+    text-align: center;
+    h1{
+      color: $white;
+      margin-top: auto;
+    }
+    h3{
+      color: #FFFFFF99;
+      margin-bottom: auto;
+    }
+    .btn{
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 }
-.material{}
+.material{
+  .artTitle{
+    font-size: 1.5rem;
+  }
+  article{
+    width: 70%;
+    @include pad{
+      width: 100%;
+    }
+  }
+}
 .artDirector{
   background-image: url("https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
+  .row{
+    min-height: 400px;
+  }
+  .slogan{
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .connect{
-  background-image: url("https://images.unsplash.com/photo-1572003414077-38770ebec0a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-image: url("https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include pad{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5),  rgba(0, 0, 0, .5)),url("https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  }
+  .row{
+    min-height: 400px;
+    @include pad{
+      min-height: 224px;
+    }
+  }
+  .title{
+    font-size: 3rem;
+    line-height: 4rem;
+    @include pad{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  .custom-text-input{
+    background-color: rgba(255, 255, 255, 0);
+    line-height: 3.5rem;
+    height: 3.5rem;
+    color: #FFFFFF99;
+  }
+  .input-group-append .btn{
+    line-height: 3.5rem;
+    padding: 0 2.75rem;
+    @include pad{
+      padding: 0 1.5rem;
+    }
+  }
 }

@@ -17,14 +17,17 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="hamIcon d-lg-none text-white">
-          <span class="material-icons">menu</span>
+      <div class="row justify-content-between align-items-center py-3 py-md-4 px-3 px-md-0">
+        <div class="hamIcon d-md-none text-white">
+          <span class="material-icons" id="openMenu">menu</span>
         </div>
         <div class="logo">
-          <a href="/">CRAFTsMAN</a>
+          <a class="h4" href="/">CRAFTsMAN</a>
         </div>
-        <nav class="nav">
+        <div class="d-md-none">
+          <a href="#"><span class="material-icons text-white">shopping_cart</span></a>
+        </div>
+        <nav class="nav d-none d-md-block">
           <ul class="menu d-flex flex-row m-0">
             <li><a href="#">Product</a></li>
             <li><a href="#">Blog</a></li>
@@ -38,21 +41,47 @@
     </div>
   </header>
 
+  <div class="mobile-menu bg-white p-3" id="mobileMenu">
+    <div class="d-flex justify-content-between">
+      <a href="#"><span class="material-icons text-dark" id="closeMenu">keyboard_backspace</span></a>
+      <a href="#"><span class="material-icons text-dark">shopping_cart</span></a>
+    </div>
+    <ul class="list-unstyled">
+      <li class="main-list py-3 font-weight-bold">
+        Product
+        <ul class="list-unstyled mt-3">
+          <li class="sub-list font-weight-normal py-2">ALL24</li>
+          <li class="sub-list font-weight-normal py-2">BOWL10</li>
+          <li class="sub-list font-weight-normal py-2">CUP8</li>
+          <li class="sub-list font-weight-normal py-2">PLATE3</li>
+          <li class="sub-list font-weight-normal py-2">VASE3</li>
+        </ul>
+      </li>
+      <li class="main-list py-3 font-weight-bold">
+        Blog
+      </li>
+      <li class="main-list py-3 font-weight-bold">
+        Contact
+      </li>
+    </ul>
+  </div>
+
   <%- contents %>
 
   <footer class="footer">
-    <div class="container d-flex flex-row justify-content-between align-content-center">
-      <div>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-content-center">
+      <div class="mb-5 mb-md-0">
         <a class="logo pr-3" href="#">CRAFTsMAN</a>
-        <span class="copyRight">© 2020. All Rights Reserved.</span>
+        <span class="copyRight d-none d-md-block">© 2020. All Rights Reserved.</span>
       </div>
-      <div>
-        <u class="d-flex flex-row m-0">
-          <li class="py-2"><a href="#">Purchase Policy</a></li>
-          <li class="py-2"><a href="#">Privacy Policy</a></li>
-          <li class="py-2"><a href="#">Terms & Conditions</a></li>
-        </u>
-      </div>      
+      <div class="mb-5 mb-md-0">
+        <ul class="d-flex flex-column flex-md-row m-0 list-unstyled">
+          <li class="px-md-2 mb-3 mb-md-0"><a href="#">Purchase Policy</a></li>
+          <li class="px-md-2 mb-3 mb-md-0"><a href="#">Privacy Policy</a></li>
+          <li class="px-md-2 mb-3 mb-md-0"><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <span class="copyRight d-block d-md-none">© 2020. All Rights Reserved.</span>    
     </div>
   </footer>
 

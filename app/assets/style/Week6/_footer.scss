@@ -1,12 +1,16 @@
+@import "../grid.scss";
+
 .footer {
   background-color: #121212;
   padding: 2rem 0;
   .logo{
     font-family: 'Raleway';
+    font-size: 1.5rem;
   }
   .copyRight{
     color: $white;
     opacity: .6;
+    font-size: .75rem;
   }
   a{ color: $white;}
 }
