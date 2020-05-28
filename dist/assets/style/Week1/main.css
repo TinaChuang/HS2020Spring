@@ -1,0 +1,181 @@
+@charset "UTF-8";
+body {
+  font-size: 24px;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  color: #000;
+  line-height: 36px; }
+
+h1 {
+  font-size: 80px;
+  line-height: 90px; }
+
+.container-fluid {
+  width: 100%; }
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.border-bottom-bold {
+  border-bottom: 2px solid #000; }
+
+.border-bottom {
+  border-bottom: 1px solid #000; }
+
+.mb-7 {
+  margin-bottom: 72px; }
+
+.bg-color-dark {
+  background-color: #415165; }
+
+.text-color-white {
+  color: #fff !important; }
+
+.text-align-center {
+  text-align: center; }
+
+.picBox {
+  background-image: url("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  background-position: center;
+  width: 324px;
+  height: 324px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px 0; }
+
+.authorName {
+  padding: 48px 0 12px 0; }
+
+.header {
+  font-weight: bold;
+  line-height: 45px;
+  font-size: 32px;
+  margin-bottom: 10px;
+  border-color: #bfbfbf; }
+
+.header span {
+  color: #A00404;
+  font-size: 24px;
+  margin-left: 16px; }
+
+.footer {
+  text-align: center;
+  color: #fff;
+  padding: 24px 0 48px 0; }
+
+.footer .header {
+  border-color: #fff;
+  padding-bottom: 14px;
+  font-size: 24px; }
+
+.footer .header span {
+  color: inherit; }
+
+.footer article {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 300; }
+
+.footer article p {
+  margin-bottom: 16px; }
+
+.footer article .icon {
+  display: inline-block;
+  width: 48px;
+  margin-right: 24px; }
+
+/* list 樣式 */
+.listStyle-1 {
+  padding-left: 48px; }
+
+.listStyle-1 li {
+  position: relative; }
+
+.listStyle-1 li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  margin-left: -32px;
+  top: .5rem; }
+
+.listStyle-1 p {
+  margin-bottom: 1rem; }
+
+/*時間軸*/
+.timeLine li {
+  margin-bottom: 36px; }
+
+.timeLine li::after {
+  content: "";
+  display: block;
+  z-index: -1;
+  position: absolute;
+  height: 200%;
+  width: 1px;
+  background-color: #96A9C4;
+  top: 1rem;
+  left: -1.5rem; }
+
+.timeLine li:last-child::after {
+  background-color: #fff; }
+
+/*技能*/
+.skill-section {
+  padding: 24px 56px 56px; }
+
+.skill-section ul {
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px; }
+
+.skill-section li {
+  margin: 16px; }
+
+.skill-section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*工作經驗*/
+.experience-content {
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+  margin-top: 22px;
+  margin-left: 24px; }
+
+.experience-content .logo {
+  margin: 8px 0;
+  display: block; }
+
+.experience-content .title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-top: 32px; }
+
+.experience-content .title:first {
+  margin-top: 0; }
+
+.bg-style {
+  position: relative; }
+
+.bg-style::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #96a9c4;
+  height: 360px;
+  width: 100%;
+  top: 50%;
+  margin-top: -180px;
+  z-index: -1; }
+
+/*# sourceMappingURL=main.css.map */

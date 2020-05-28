@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  .header .logo {
+    font-family: 'Raleway'; }
+    .header .logo a {
+      color: #121212; }
+      @media (max-width: 768px) {
+        .header .logo a {
+          color: #fff; } }
+  .header .menu {
+    list-style: none; }
+    .header .menu li {
+      padding: 0 2rem; }
+    .header .menu a {
+      color: #fff; }
+  @media (max-width: 768px) {
+    .header .container {
+      padding: 0; }
+    .header .row {
+      margin: 0; } }
+
+.mobile-menu {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100; }
+  .mobile-menu .main-list {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6); }
+    .mobile-menu .main-list ul {
+      border-top: 1px solid rgba(0, 0, 0, 0.6); }
+  .mobile-menu .sub-list {
+    color: rgba(0, 0, 0, 0.6); }
+
+.footer {
+  background-color: #121212;
+  padding: 2rem 0; }
+  .footer .logo {
+    font-family: 'Raleway';
+    font-size: 1.5rem; }
+  .footer .copyRight {
+    color: #fff;
+    opacity: .6;
+    font-size: .75rem; }
+  .footer a {
+    color: #fff; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem; }
+
+.material-icons {
+  font-family: 'Material Icons'; }
+
+.text-line-through {
+  text-decoration: line-through; }
+
+/*# sourceMappingURL=common.css.map */
