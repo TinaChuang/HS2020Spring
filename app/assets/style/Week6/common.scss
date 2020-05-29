@@ -1,6 +1,7 @@
 @import "variables_Custom.scss";
 @import "grid.scss";
 @import "header.scss";
+@import "connect.scss";
 @import "footer.scss";
 
 body{
@@ -13,4 +14,25 @@ body{
 }
 .text-line-through{
   text-decoration:line-through;
+}
+
+a{
+  color: $black;
+  &:hover, &:active{
+    color: $main-color;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.menuItem.active a{
+  color: $main-color;
+  font-weight: bold;
+}
+
+.pageItem{
+  display: inline-block;
+  &.active a, a:hover{
+    color: $main-color;
+    text-decoration: underline;
+  }
 }

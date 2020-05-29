@@ -1,0 +1,36 @@
+.connect{
+  background-image: url("https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include pad{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5),  rgba(0, 0, 0, .5)),url("https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  }
+  .row{
+    min-height: 400px;
+    @include pad{
+      min-height: 224px;
+    }
+  }
+  .title{
+    font-size: 3rem;
+    line-height: 4rem;
+    @include pad{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  .custom-text-input{
+    background-color: rgba(255, 255, 255, 0);
+    line-height: 3.5rem;
+    height: 3.5rem;
+    color: #FFFFFF99;
+  }
+  .input-group-append .btn{
+    line-height: 3.5rem;
+    padding: 0 2.75rem;
+    @include pad{
+      padding: 0 1.5rem;
+    }
+  }
+}
