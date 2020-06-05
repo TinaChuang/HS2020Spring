@@ -1,3 +1,5 @@
+@import "variables_Custom.scss";
+
 .prodDetail{
   .card{
     .saleMark{
@@ -9,12 +11,16 @@
   }
   .prod-nameCard{
     right: 0;
-    .card-title{}
+    transform: translate(0, 50%);
   }
   .breadcrumb{
     background-color: $white;
   }
   .prod-quantity{
-    .prod-quantity-num{}
+    flex-shrink: 0;
+  }
+  .btn-addToCart{
+    width: 100%;
+    
   }
 }

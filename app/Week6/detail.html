@@ -4,29 +4,23 @@ layout: ./app/week6/_layout.ejs
 engine: ejs
 current: product
 ---
-<link rel="stylesheet" href="../assets/style/Week6/detail.css">
+<link rel="stylesheet" type="text/css" href="../assets/style/Week6/detail.css">
 
-<div class="container">
-  <div class="row prodDetail">
+<div class="container mb-5">
+  <div class="row prodDetail position-relative">
     <div class="col-12 col-md-9 prod-introduction">
       <div class="card border-0">
         <span class="saleMark font-weight-bold text-white position-absolute p-3">ON SALE</span>
         <img class="card-img-top font-weight-bold mb-2" src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Card image cap">
         <div class="card-body p-0 pb-5">
-          <div class="row">
-            
+          <div class="row">            
             <div class="col-md-7">
               <p>This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.</p>
-              <h5 class="card-title mb-1">Tatami Cup</h5>
-              <p class="card-text">
-                <span class="mr-2">NT$1,080</span>
-                <span class="text-line-through text-muted">NT$1,200</span>
-              </p>
             </div>
             <div class="col-md-5 text-secondary">
-              <p>Made in Taiwan</p>
-              <p>8 x 8 x 6 cm</p>
-              <p>Dishwasher and Microwave-safe</p>
+              <p class="mb-1">Made in Taiwan</p>
+              <p class="mb-1">8 x 8 x 6 cm</p>
+              <p class="mb-1">Dishwasher and Microwave-safe</p>
             </div>
           </div>
           
@@ -43,16 +37,21 @@ current: product
               <li class="breadcrumb-item active" aria-current="page">Cup</li>
             </ol>
           </nav>
-          <h5 class="card-title font-weight-bold mb-1">Tatami Cup</h5>
+          <h5 class="card-title font-weight-bold mb-1 h1">Tatami Cup</h5>
           <p class="d-block text-line-through text-muted text-right mb-0">NT$1,200</p>
-          <p class="d-block text-right font-weight-bold">NT$1,080</p>
+          <p class="d-block text-right font-weight-bold h3 mb-4">NT$1,080</p>
           <div class="d-flex">
-            <div class="prod-quantity">
-              <button class="btn rounded-left">-</button>
-              <span class="prod-quantity-num"></span>
-              <button class="btn rounded-right">+</button>
+            <div class="prod-quantity bg-light p-2 mr-1">
+              <button class="btn rounded-left">
+                <span class="material-icons align-middle">remove</span>
+                
+              </button>
+              <span class="prod-quantity-num px-1">1</span>
+              <button class="btn rounded-right">
+                <span class="material-icons align-middle">add</span>
+              </button>
             </div>
-            <button class="btn btn-primary">Add to cart</button>
+            <button class="btn btn-primary d-block btn-addToCart" >Add to cart</button>
           </div>
         </div>
       </div>
@@ -62,7 +61,8 @@ current: product
 
 <div class="container">
   <div class="row">
-    <div class="owl-carousel">
+    <h2 class="font-weight-bold mb-4">You might also like…</h2>
+    <div class="owl-carousel carouselList">
       <div class="card border-0 position-relative">
         <span class="saleMark font-weight-bold text-white position-absolute p-3">ON SALE</span>
         <img class="card-img-top font-weight-bold mb-2" src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Card image cap">
@@ -180,18 +180,3 @@ current: product
   </div>
 </div>
 
-<div class="container my-5">
-  <nav class="d-flex justify-content-center">
-    <ul class="list-unstyled">
-      <li class="px-3 pageItem active">
-        <a class="" href="javascript:;" tabindex="-1">1</a>
-      </li>
-      <li class="px-3 pageItem">
-        <a class="" href="javascript:;">2</a>
-      </li>
-      <li class="px-3 pageItem">
-        <a class="" href="javascript:;">3</a>
-      </li>
-    </ul>
-  </nav>
-</div>

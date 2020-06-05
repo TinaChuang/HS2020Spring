@@ -50,3 +50,40 @@ a{
     font-size: 0.75rem;
   }
 }
+
+// 瀑布式排版，pad時兩列
+@media only screen and (max-width: 768px) {
+  .card-columns {
+    column-count: 2 !important;
+  }
+  .card-columns .card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+// 橫向輪播區塊
+.carouselList{
+  img{
+    height: 200px;
+    width: auto;
+  }
+}
+
+//右側出現的 modal
+.modal.right{
+  .modal-dialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    max-width: 800px;
+    height: 100%;
+    transform: translate(10% , 0);
+  }
+  &.show{
+    .modal-dialog{
+      transform: translate(0 , 0);
+    }
+  }
+}
