@@ -15,6 +15,9 @@ body{
 .text-line-through{
   text-decoration:line-through;
 }
+.text-small{
+  font-size: .8em;
+}
 
 a{
   color: $black;
@@ -72,6 +75,9 @@ a{
 
 //右側出現的 modal
 .modal.right{
+  .modal-content{
+    height: 100vh;
+  }
   .modal-dialog{
     position: fixed;
     top: 0;
@@ -85,5 +91,44 @@ a{
     .modal-dialog{
       transform: translate(0 , 0);
     }
+  }
+}
+// 購物車內商品列表
+.cartList{
+  .itemCard{
+    .img-left{
+      width: 45%;
+      min-width: 112px;
+    }
+  }
+  .close{
+    top: 0;
+    right: 0;
+  }
+}
+// 購物車內總計區塊
+.priceArea{
+  .emptyBlock{
+    width: 45%;
+    min-width: 112px;
+  }
+}
+
+// 商品頁 商品右側品名、數量卡
+.prodDetail{
+  .card{
+    .saleMark{
+      width: 100%;
+    }
+  }
+  .prod-introduction{
+
+  }
+  .prod-nameCard{
+    right: 0;
+    transform: translate(0, 50%);
+  }
+  .breadcrumb{
+    background-color: $white;
   }
 }
