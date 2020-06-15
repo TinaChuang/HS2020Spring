@@ -1,0 +1,117 @@
+---
+title: dashboard
+layout: ./app/week5/_layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="w-100 p-5">
+
+  <header class="d-flex flex-row justify-content-between w-100 mb-5 align-items-center">
+    <div>
+      <h1 class="d-inline-block h4 font-weight-bold mr-5">Assignment</h1>
+      <p class="d-inline-block font-weight-bold">
+        All Courses
+        <span class="material-icons align-middle text-primary">expand_more</span>
+      </p>
+    </div>
+    <div>
+      <span class="material-icons pr-4">search</span>
+      <span class="material-icons">notifications_active</span>
+    </div>
+  </header>
+  <div class="d-flex flex-row">
+    <div class="assignment">
+      <div class="assignment-heder">All(4)</div>
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+    <div class="dialogue">
+      <p class="text-right text-muted">2 comments</p>
+      <div class="dialogue-header d-flex flex-row justify-content-between">
+        <p>
+          <span class="dialogue-subTitle">Chapter Assignment 2 / HTML&CSS</span>
+          <span class="dialogue-title">Please check this file for me, thanks!</span>
+        </p>
+        <span class="material-icons">more_vert</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <table class="w-100 custom-table">
+      <thead>
+        <tr>
+          <th>ID<span class="material-icons text-primary align-bottom">arrow_downward</span></th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Verified</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#1</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="text-right">
+            <span class="material-icons align-bottom mr-4">remove_red_eye</span> 
+            <span class="material-icons align-bottom">create</span>
+          </td>
+        </tr>
+        <tr>
+          <td>#2</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="text-right">
+            <span class="material-icons align-bottom mr-4">remove_red_eye</span> 
+            <span class="material-icons align-bottom">create</span>
+          </td>
+        </tr>
+        <tr>
+          <td>#3</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="text-right">
+            <span class="material-icons align-bottom mr-4">remove_red_eye</span> 
+            <span class="material-icons align-bottom">create</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-5">
+    <nav class="d-flex justify-content-end">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link p-1 align-bottom" href="#" aria-label="Previous">
+            <span class="material-icons">keyboard_arrow_left</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link p-1 align-bottom" href="#" aria-label="Next">
+            <span class="material-icons">keyboard_arrow_right</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- <span class="material-icons">add</span>
+  <span class="material-icons">create</span>
+  <span class="material-icons">notifications_active</span>
+  <span class="material-icons">search</span>
+  <span class="material-icons">arrow_downward</span>
+  <span class="material-icons">remove_red_eye</span>   -->
+</main>
+
