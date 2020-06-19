@@ -9,6 +9,8 @@
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.3rem;
 }
 
 *,
@@ -25,5 +27,17 @@ html {
 @import "../BS/utilities/display";
 @import "../BS/utilities/flex";
 @import "../BS/utilities/spacing";
+@import "../BS/utilities/borders";
+@import "../BS/utilities/text";
+@import "../BS/utilities/position";
 
+@import "../BS/type";
 @import "../BS/buttons";
+@import "../BS/nav";
+@import "../BS/images";
+
+
+.btn-outline-primary{
+  background-color: $light;
+}
+.w-50{ width: 50%;}

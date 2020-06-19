@@ -39,8 +39,12 @@ current: index
           <td>emir.wicks@mail.com</td>
           <td>Yes</td>
           <td class="text-right">
-            <span class="material-icons align-bottom mr-4">remove_red_eye</span> 
-            <span class="material-icons align-bottom">create</span>
+            <a href="javascrip:;" class="align-bottom mr-4" data-toggle="modal" data-target="#Modal-view">
+              <span class="material-icons">remove_red_eye</span> 
+            </a>
+            <a href="javascrip:;" class="align-bottom">
+              <span class="material-icons">create</span>
+            </a>  
           </td>
         </tr>
         <tr>
@@ -93,3 +97,42 @@ current: index
   <span class="material-icons">remove_red_eye</span>   -->
 </main>
 
+<!-- Modal -->
+<div class="modal fade" id="Modal-view" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-5">
+              <img src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-fluid">
+            </div>
+            <div class="col-7">
+              <p>#1</p>
+              <p class="mb-0">Admin</p>
+              <p class="h4">Emir Wicks</p>
+              <p><small class="text-muted">emir.wicks@mail.com</small></p>
+              <div>
+                <snap>verified</snap>
+                <span class="material-icons align-middle text-primary">expand_more</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">deactivate</button>
+        <button type="button" class="btn btn-primary">edit</button>
+      </div>
+    </div>
+  </div>
+</div>
