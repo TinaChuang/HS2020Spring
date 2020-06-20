@@ -6,102 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style/Week6/bootstrap.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/style/Week6/common.css">
+  <link rel="stylesheet" href="../assets/style/Week5/bootstrap.css">
+  <link rel="stylesheet" href="../assets/style/Week5/common.css">
   
 </head>
 
-<body>
-  <header class="header">
-    <div class="container p-0 px-md-3">
-      <div class="row justify-content-between align-items-center py-3 py-md-4 px-4 px-md-0">
-        <div class="hamIcon d-md-none">
-          <a href="javascript:;">
-            <span class="material-icons text-dark" id="openMenu">menu</span>
-          </a>          
-        </div>
-        <div class="logo">
-          <a class="h4" href="./index.html">CRAFTsMAN</a>
-        </div>
-        <div class="d-md-none">
-          <a href="javascript:;"><span class="material-icons text-white">shopping_cart</span></a>
-        </div>
-        <nav class="nav d-none d-md-block">
-          <ul class="menu d-flex flex-row m-0 list-unstyled">
-            <li class="menuItem px-4"><a href="./product.html">Product</a></li>
-            <li class="menuItem px-4"><a href="javascript:;">Blog</a></li>
-            <li class="menuItem px-4"><a href="javascript:;">Contact</a></li>
-            <li class="menuItem px-4">
-              <a href="javascript:;" data-toggle="modal" data-target="#exampleModal"><span class="material-icons">shopping_cart</span></a>
-            </li>
-          </ul>
-        </nav>
+<body class="d-flex flex-row">
+  <aside class="mainMenu d-flex flex-column align-items-stretch bg-light flex-shrink-0">
+    <div class="header p-5">
+      <div class="logo">
+        <a href="/week5/index.html">
+          <img class="img-fluid" src="../assets/images/Week5/logo-ANSWER.svg" alt="">
+        </a>        
       </div>
     </div>
-  </header>
-
-  <div class="mobile-menu bg-white p-3" id="mobileMenu">
-    <div class="d-flex justify-content-between">
-      <a href="#"><span class="material-icons text-dark" id="closeMenu">keyboard_backspace</span></a>
-      <a href="#"><span class="material-icons text-dark">shopping_cart</span></a>
+    <nav class="navbar mb-auto px-0">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/week5/index.html" class="nav-link pl-5">
+            <i class="material-icons align-bottom pr-3">analytics</i>Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link pl-5">
+            <i class="material-icons align-bottom pr-3">question_answer</i>Question
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/week5/assignment.html" class="nav-link pl-5">
+            <i class="material-icons align-bottom pr-3">assignment</i>Assignment
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link pl-5">
+            <i class="material-icons align-bottom pr-3">video_library</i>Course
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link pl-5">
+            <i class="material-icons align-bottom pr-3">people</i>Admin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link pl-5">
+            <i class="material-icons align-bottom pr-3">settings</i>Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="footer d-flex flex-row p-5 align-items-center">
+      <div class="authorImg mr-3 flex-shrink-0"></div>
+      <div class="authorInfo">
+        <p class="font-weight-bold mb-0">Andy Chen</p>
+        <p class="text-muted mb-0">andy0401@mail.com</p>
+      </div>
     </div>
-    <ul class="list-unstyled">
-      <li class="main-list py-3 font-weight-bold">
-        <a href="./product.html">Product</a>
-        <ul class="list-unstyled mt-3">
-          <li class="sub-list font-weight-normal py-2">ALL <span class="align-text-bottom">24</span></li>
-          <li class="sub-list font-weight-normal py-2">BOWL<span class="align-text-bottom">10</span></li>
-          <li class="sub-list font-weight-normal py-2">CUP<span class="align-text-bottom">8</span></li>
-          <li class="sub-list font-weight-normal py-2">PLATE<span class="align-text-bottom">3</span></li>
-          <li class="sub-list font-weight-normal py-2">VASE<span class="align-text-bottom">3</span></li>
-        </ul>
-      </li>
-      <li class="main-list py-3 font-weight-bold">
-        Blog
-      </li>
-      <li class="main-list py-3 font-weight-bold">
-        Contact
-      </li>
-    </ul>
-  </div>
+  </aside>
 
   <%- contents %>
-
-  <div class="connect">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-12 col-md-6">
-          <h3 class="title text-white font-weight-bold mb-5">Subscribe for news and special offers!</h3>
-          <div class="input-group">
-            <input type="text" class="form-control custom-text-input" id="validationTooltipUsername" placeholder="Your email address">
-            <div class="input-group-append">
-              <span class="btn btn-primary">Subscribe</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>    
-  </div>
-
-  <footer class="footer">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-content-center">
-      <div class="mb-5 mb-md-0">
-        <a class="logo pr-3" href="#">CRAFTsMAN</a>
-        <span class="copyRight d-none d-md-block">© 2020. All Rights Reserved.</span>
-      </div>
-      <div class="mb-5 mb-md-0">
-        <ul class="d-flex flex-column flex-md-row m-0 list-unstyled">
-          <li class="px-md-2 mb-3 mb-md-0"><a href="javascript:;">Purchase Policy</a></li>
-          <li class="px-md-2 mb-3 mb-md-0"><a href="javascript:;">Privacy Policy</a></li>
-          <li class="px-md-2 mb-3 mb-md-0"><a href="javascript:;">Terms & Conditions</a></li>
-        </ul>
-      </div>
-      <span class="copyRight d-block d-md-none">© 2020. All Rights Reserved.</span>    
-    </div>
-  </footer>
 
   <!-- Modal -->
 <div class="modal right fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -199,8 +164,7 @@
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="../assets/js/Week6/index.js"></script>
+  <!-- <script src="../assets/js/Week5/index.js"></script> -->
 </body>
 
 </html>
