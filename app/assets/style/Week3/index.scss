@@ -1,18 +1,9 @@
 @import "_variables_Custom.scss";
 @import "_grid.scss";
 
-.icon-optical{
-  background-image: url("/assets/images/week3/icon-diamond.svg");
-}
-.icon-sunglasses{
-  background-image: url("/assets/images/week3/icon-glasses.svg");
-}
-.icon-functional{
-  background-image: url("/assets/images/week3/icon-thunder.svg");
-}
 // 刊頭
 .banner{
-  background: url("/assets/images/week3/banner.png") center no-repeat;
+  background: url("../images/Week3/banner.png") center no-repeat;
   background-size: cover;
   color: $main-color;
   height: 100vh;
@@ -29,20 +20,27 @@
 // 用專業的心，做專業的事
 .serviceItems{
   padding: 4rem 0;
+  background-color: $second-color;
+  .card{
+    background-color: $second-color;
+  }
+  .card-title{
+    color: $main-color;
+  }
 }
 
 // 經典系列鏡框
 .classic{}
 
 .cross-bg{
-  background-image: url("/assets/images/week3/bg.png");
+  background-image: url("../images/Week3/bg.png");
 }
 
 //聯名設計鏡框
 .joint{
   .moreBox{
     height: 100%;
-    background-image: url("/assets/images/week3/more.png");
+    background-image: url("../images/Week3/more.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: 80% 0;
