@@ -1,0 +1,49 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #121212;
+  line-height: 1.3rem; }
+
+code {
+  background: #edf4ee;
+  color: #2a8356;
+  padding: 0 .25rem; }
+
+.mainMenu {
+  min-height: 100vh;
+  width: 300px; }
+  .mainMenu .nav-item {
+    border-left: 4px solid #edf4ee; }
+    .mainMenu .nav-item:hover {
+      border-left: 4px solid #2a8356; }
+  .mainMenu .authorImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80") no-repeat center;
+    background-size: cover; }
+
+.custom-table th {
+  border-bottom: 1px solid #121212; }
+
+.custom-table td {
+  padding: 1rem 0;
+  border-bottom: 1px solid #cdddcd; }
+
+.list-group-item .list-group-item-title {
+  width: 10rem; }
+
+.assignment {
+  width: 320px; }
+
+.dialogue-avatar {
+  width: 40px;
+  height: 40px;
+  overflow: hidden; }
+
+.dialogue-content .insertLink {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+/*# sourceMappingURL=common.css.map */

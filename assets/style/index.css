@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto','Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.3rem; }
+
+.header, .footer {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #00251a;
+  color: #fff; }
+
+.header {
+  top: 0; }
+
+.footer {
+  bottom: 0; }
+
+.mainMenu {
+  list-style: none; }
+  .mainMenu a {
+    color: #fff; }
+
+.asideMenu {
+  max-width: 250px;
+  min-height: calc(100vh - 6rem);
+  background-color: #f7f7f7; }
+  .asideMenu .menu {
+    list-style: none; }
+    .asideMenu .menu li {
+      margin: 1rem; }
+
+/*# sourceMappingURL=index.css.map */
