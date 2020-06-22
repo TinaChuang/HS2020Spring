@@ -2,17 +2,17 @@
 @import "_grid.scss";
 
 .icon-optical{
-  background-image: url("/assets/images/week3/icon-diamond.svg");
+  background-image: url("../assets/images/week3/icon-diamond.svg");
 }
 .icon-sunglasses{
-  background-image: url("/assets/images/week3/icon-glasses.svg");
+  background-image: url("../assets/images/week3/icon-glasses.svg");
 }
 .icon-functional{
-  background-image: url("/assets/images/week3/icon-thunder.svg");
+  background-image: url("../assets/images/week3/icon-thunder.svg");
 }
 // 刊頭
 .banner{
-  background: url("/assets/images/week3/banner.png") center no-repeat;
+  background: url("../assets/images/week3/banner.png") center no-repeat;
   background-size: cover;
   color: $main-color;
   height: 100vh;
@@ -28,14 +28,21 @@
 
 // 用專業的心，做專業的事
 .serviceItems{
-  padding: 4rem 0;
+  background-color: $second-color;
+  .card{
+    background-color: $second-color;
+  }
+  .card-title{
+    color: $main-color;
+
+  }
 }
 
 // 經典系列鏡框
 .classic{}
 
 .cross-bg{
-  background-image: url("/assets/images/week3/bg.png");
+  background-image: url("../assets/images/week3/bg.png");
 }
 
 //聯名設計鏡框
