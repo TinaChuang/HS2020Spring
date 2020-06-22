@@ -37,4 +37,4 @@ git push -u origin master // 僅限第一次輸入，往後只需要輸入 git p
 
 # HS2020Spring
 For hexschool 2020 siring class homework
-[網址](https://tinachuang.github.io/HS2020Spring/)
+[網址](https://tinachuang.github.io/HS2020Spring/index.html)

@@ -1,0 +1,94 @@
+.icon-optical {
+  background-image: url("/assets/images/week3/icon-diamond.svg"); }
+
+.icon-sunglasses {
+  background-image: url("/assets/images/week3/icon-glasses.svg"); }
+
+.icon-functional {
+  background-image: url("/assets/images/week3/icon-thunder.svg"); }
+
+.banner {
+  background: url("/assets/images/week3/banner.png") center no-repeat;
+  background-size: cover;
+  color: #650300;
+  height: 100vh; }
+  .banner .subTitle {
+    font-size: 2.25rem;
+    line-height: 3.25rem; }
+  .banner .title {
+    font-size: 4rem;
+    line-height: 5rem; }
+
+.serviceItems {
+  padding: 4rem 0; }
+
+.cross-bg {
+  background-image: url("/assets/images/week3/bg.png"); }
+
+.joint .moreBox {
+  height: 100%;
+  background-image: url("/assets/images/week3/more.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 80% 0; }
+  @media (max-width: 768px) {
+    .joint .moreBox {
+      background-position: 30% 0; } }
+  @media (max-width: 568px) {
+    .joint .moreBox {
+      background-position: 0 0; } }
+
+.joint .moreLink {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 4rem;
+  padding: .8rem 1rem;
+  text-decoration: none;
+  -webkit-transition: text-shadow .5s;
+  -o-transition: text-shadow .5s;
+  transition: text-shadow .5s; }
+  .joint .moreLink:hover {
+    color: #AA0601;
+    text-shadow: rgba(170, 6, 1, 0.8) 0 -4rem 0, rgba(170, 6, 1, 0.4) 0 -8rem 0; }
+    .joint .moreLink:hover .icon-arrow {
+      -webkit-transform: translateX(1rem);
+          -ms-transform: translateX(1rem);
+              transform: translateX(1rem); }
+  @media (max-width: 768px) {
+    .joint .moreLink {
+      font-size: 1rem; } }
+  @media (max-width: 568px) {
+    .joint .moreLink {
+      font-size: .8rem; } }
+  .joint .moreLink .icon-arrow {
+    display: inline-block;
+    height: 4rem;
+    width: auto;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    @media (max-width: 768px) {
+      .joint .moreLink .icon-arrow {
+        height: 1rem; } }
+    @media (max-width: 568px) {
+      .joint .moreLink .icon-arrow {
+        height: .8rem; } }
+
+.joint .coverText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(225, 225, 225, 0.6);
+  width: calc(100% - 30px);
+  height: 100%;
+  top: 0;
+  left: 15px;
+  color: #AA0601;
+  font-size: 4rem; }
+
+/*# sourceMappingURL=index.css.map */
